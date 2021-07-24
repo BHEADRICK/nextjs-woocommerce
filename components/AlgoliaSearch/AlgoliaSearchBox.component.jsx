@@ -29,11 +29,11 @@ const AlgoliaSearchBox = () => {
           >
             {/*We need to conditionally add a border because the element has position:fixed*/}
             <SearchBox
-              aria-label="Søk her"
+              aria-label="Search Here"
               translations={{
-                submitTitle: 'Søk',
-                resetTitle: 'Slett søketekst',
-                placeholder: 'Søk etter products',
+                submitTitle: 'Search',
+                resetTitle: 'Clear Search Text',
+                placeholder: 'Search for Products',
               }}
               className={`px-4 py-2 text-base bg-white border outline-none rounded ${
                 hasFocus ? 'border-black' : 'border-gray-400'
