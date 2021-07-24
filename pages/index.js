@@ -17,7 +17,7 @@ const HomePage = ({ products }) => {
     <>
       <Header title="- Forside" />
       <Hero />
-      <PageTitle title="Produkter" />
+      <PageTitle title="Products" />
       {products && <IndexProducts products={products} />}
     </>
   );

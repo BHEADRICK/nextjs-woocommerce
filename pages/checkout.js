@@ -4,8 +4,8 @@ import PageTitle from 'components/Title/PageTitle.component';
 
 const Kasse = () => (
   <>
-    <Header title="- Gå til kasse" />
-    <PageTitle title="Din ordre" />
+    <Header title="- Go to Checkout" />
+    <PageTitle title="Your Order" />
     <CheckoutForm />
   </>
 );

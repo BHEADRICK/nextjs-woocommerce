@@ -15,8 +15,8 @@ const CategoryPage = ({ categories }) => {
 
   return (
     <>
-      <Header title="- Kategorier" />
-      <PageTitle title="Kategorier" />
+      <Header title="- Categories" />
+      <PageTitle title="Categories" />
 
       {categories && <Categories categories={categories} />}
 
@@ -31,7 +31,7 @@ const CategoryPage = ({ categories }) => {
       {/* Display error message if error occured */}
       {error && (
         <div className="h-12 mt-20 text-2xl text-center">
-          Feil under lasting av kategorier ...
+          Feil under lasting av categories ...
         </div>
       )}
     </>

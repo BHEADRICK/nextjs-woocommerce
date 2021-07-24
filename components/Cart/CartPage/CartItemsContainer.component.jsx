@@ -112,10 +112,10 @@ const CartItemsContainer = () => {
             </div>
           ) : (
             <div className="p-6 mx-auto mt-5">
-              <h2 className="text-lg">Ingen varer i handlekurven</h2>
+              <h2 className="text-lg">The cart is empty</h2>
               <button className="px-4 py-2 m-4 font-bold uppercase bg-white border border-gray-400 border-solid rounded hover:bg-gray-400">
-                <Link href="/produkter">
-                  <a>Legg til varer</a>
+                <Link href="/products">
+                  <a>Continue Shopping</a>
                 </Link>
               </button>
             </div>

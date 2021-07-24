@@ -94,7 +94,7 @@ const SingleProduct = ({ product }) => {
               </p>
               {product.variations && (
                 <p className="pt-1 mt-4 text-xl text-gray-900">
-                  <span className="py-2">Varianter</span>
+                  {/* <span className="py-2">Varianter</span> */}
                   <select
                     id="variant"
                     name="variant"
@@ -103,13 +103,14 @@ const SingleProduct = ({ product }) => {
                       setselectedVariation(e.target.value);
                     }}
                   >
+                    <option value=""></option>
                     {product.variations.nodes.map(
-                      ({ id, name, databaseId }) => {
+                      ({ id, name, databaseId , attribute_values}) => {
                         // Remove product name from variation name
                         const filteredName = name.split('- ').pop();
                         return (
                           <option key={id} value={databaseId}>
-                            {filteredName}
+                            {filteredName} | {attribute_values}
                           </option>
                         );
                       }

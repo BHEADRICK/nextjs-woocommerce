@@ -14,8 +14,8 @@ const Categories = ({ categories }) => {
           {categories.map(({ id, name, slug }) => (
             <Link
               key={uuidv4()}
-              as={`/kategori/${slug}?id=${id}`}
-              href="/kategori/[id]"
+              as={`/category/${slug}?id=${id}`}
+              href="/category/[id]"
             >
               <div className="p-6 cursor-pointer">
                 <div className="flex items-center justify-center w-full h-16 text-center border border-gray-300 rounded-lg shadow hover:shadow-outline">

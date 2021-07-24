@@ -13,13 +13,13 @@ import client from 'utils/apollo/ApolloClient.js';
  * Displays loading spinner while loading.
  * Shows an error if the server is down or unreachable.
  */
-const Produkter = ({ products }) => {
+const Products = ({ products }) => {
   const error = false;
 
   return (
     <>
-      <Header title="- Produkter" />
-      <PageTitle title="Produkter" />
+      <Header title="- Products" />
+      <PageTitle title="Products" />
 
       {products && <IndexProducts products={products} />}
 
@@ -34,14 +34,14 @@ const Produkter = ({ products }) => {
       {/* Display error message if error occured */}
       {error && (
         <div className="h-12 mt-20 text-2xl text-center">
-          Feil under lasting av produkter ...
+          Feil under lasting av products ...
         </div>
       )}
     </>
   );
 };
 
-export default Produkter;
+export default Products;
 
 export async function getStaticProps() {
   const result = await client.query({

@@ -2,14 +2,14 @@ import Header from 'components/Header/Header.component';
 import CartItemsContainer from 'components/Cart/CartPage/CartItemsContainer.component';
 import PageTitle from 'components/Title/PageTitle.component';
 
-const Handlekurv = () => {
+const Cart = () => {
   return (
     <>
-      <Header title="- Handlekurv" />
-      <PageTitle title="Handlekurv" />
+      <Header title="- Cart" />
+      <PageTitle title="Cart" />
       <CartItemsContainer />
     </>
   );
 };
 
-export default Handlekurv;
+export default Cart;
