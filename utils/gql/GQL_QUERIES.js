@@ -24,20 +24,17 @@ export const GET_SINGLE_PRODUCT = gql`
         id
       }
       ... on VariableProduct {
+        attributes {
+          edges {
+            node {
+              id
+            }
+          }
+        }
         salePrice
         regularPrice
         price
         id
-        paColors {
-          nodes {
-            name
-          }
-        }
-        paSizes {
-          nodes {
-            name
-          }
-        }
         variations {
           nodes {
             id
@@ -68,6 +65,7 @@ export const GET_SINGLE_PRODUCT = gql`
         }
         id
       }
+    
     }
   }
 `;
@@ -106,37 +104,39 @@ export const FETCH_FIRST_PRODUCTS_FROM_HOODIES_QUERY = `
  * Fetch first 200 Woocommerce products from GraphQL
  */
 export const FETCH_ALL_PRODUCTS_QUERY = gql`
-  query MyQuery {
-    products(first: 200) {
-      nodes {
-        id
-        databaseId
-        name
-        onSale
-        slug
-        image {
-          sourceUrl
-        }
-        ... on SimpleProduct {
-          price
-          regularPrice
-          salePrice
-        }
-        ... on VariableProduct {
-          price
-          regularPrice
-          salePrice
-          variations {
-            nodes {
-              price
-              regularPrice
-              salePrice
-            }
+query MyQuery {
+  products(first: 200) {
+    nodes {
+      id
+      databaseId
+      name
+      onSale
+      slug
+      image {
+        sourceUrl
+      }
+      ... on SimpleProduct {
+        price
+        regularPrice
+        salePrice
+      }
+      ... on VariableProduct {
+        price
+        regularPrice
+        salePrice
+        variations {
+          nodes {
+            price
+            regularPrice
+            salePrice
           }
         }
       }
+     
     }
   }
+}
+
 `;
 
 /**
