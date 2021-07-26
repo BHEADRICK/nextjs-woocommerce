@@ -3,7 +3,7 @@
 // Live details
 
 export const WOO_CONFIG = {
-  GRAPHQL_URL: process.env.GRAPHQL_URL,  
+  GRAPHQL_URL: "https://app.bryanheadrick.com/graphql",  
   ALGOLIA_INDEX_NAME: "products_test",
   PLACEHOLDER_SMALL_IMAGE_URL:
     'https://res.cloudinary.com/duelisue0/image/upload/v1600187495/Nextjs-Woocommerce/337_utsb7h.jpg',
