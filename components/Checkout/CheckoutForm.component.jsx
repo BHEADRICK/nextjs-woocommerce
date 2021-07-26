@@ -76,14 +76,14 @@ const CheckoutForm = () => {
           {/*Error display*/}
           {requestError && (
             <div className="h-32 text-xl text-center text-red-600">
-              En feil har oppstått. Feilmeldingen er: <br />$
+              An error has occurred: <br />$
               {requestError.toString()}
             </div>
           )}
           {/* Checkout Loading*/}
           {checkoutLoading && (
             <div className="text-xl text-center">
-              Behandler ordre, vennligst vent ...
+              Processing order, please wait ...
               <br />
               <LoadingSpinner />
             </div>
@@ -93,7 +93,7 @@ const CheckoutForm = () => {
         <>
           {orderCompleted && (
             <div className="container h-24 m-12 mx-auto mt-32 text-xl text-center">
-              Takk for din ordre!
+              Thank you for your order!
             </div>
           )}
         </>

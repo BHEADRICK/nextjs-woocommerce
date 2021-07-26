@@ -92,9 +92,9 @@ const CartItemsContainer = () => {
                 updateCart={updateCart}
               />
               <div className="mt-4">
-                <Link href="/kasse">
+                <Link href="/checkout">
                   <button className="px-4 py-2 font-bold bg-white border border-gray-400 border-solid rounded hover:bg-gray-400">
-                    GÅ TIL KASSE
+                    Proceed to Checkout
                   </button>
                 </Link>
               </div>
